@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Document</title>
+  <script src="./flowbite.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+
+  <script></script>
+</head>
+
+<body>
+  <div class="">
+    <!-- wrepper products-->
+    <div>
+
+      <nav class="mt-26 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="flex flex-wrap items-center justify-between mx-auto ml-4 mr-4 ">
+
+          <a href="#" class="flex ">
+            <img src="./img/logo.png" class="h-6 mr-10 sm:h-10" alt="Logo" />
+
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Inventory</span>
+          </a>
+          <div class="flex items-center md:order-2">
+            <a href="" class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="" class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 " viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <button type="button" class="flex p-1 mr-10 space-x-2 border-2 border-gray-500 rounded-full w-26 focus:ring-gray-300 " id="user-menu-button" aria-expanded="false" type="button" data-dropdown-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 m-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <img class="w-8 h-8 rounded-full " src="./img/m.png" alt="user photo">
+
+            </button>
+
+
+          </div>
+
+
+          <div class="relative w-1/2 mr-3 md:mr-0 md:block ">
+
+
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <input type="text" id="email-adress-icon" class="block w-full p-2 pl-10 text-justify text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 " placeholder="Search">
+
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 text-justify text-gray-400 "> Filter
+
+                <button type="button" data-modal-toggle="authentication-modal" class="z-50">
+  
+  
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+  
+                </button>
+  
+              </div>
+          </div>
+
+
+          <div id="authentication-modal"  aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 justify-center hidden w-full h-full overflow-y-auto bg-cover ">
+
+            <div class="relative h-auto max-w-4xl px-4">
+
+
+              <div class="relative bg-white rounded-lg shadow ">
+
+                <form class="px-4 pb-2 space-y-4 lg:px-8 sm:pb-6 xl:pb-8" action="#">
+                  <h3 class="text-xl font-medium text-gray-900 dark:text-white">Choose filter to narrow down the product search</h3>
+
+
+                  <div>
+                    <div class="flex flex-row py-4">
+                      <div class="bg-mr-3 ">Categories</div>
+                      <div class="w-full mt-3 border-t border-gray-200 ">
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 mt-2 ">
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Attraction</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Information</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Stays</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Experiences</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Other</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Transportation</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Food & drinks</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Personnel</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Venues</label>
+                      </div>
+                      <div>
+                        <p class="mt-2 text-sm underline underline-offset-1">Show all categories</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div>
+                    <div class="flex flex-row py-4">
+                      <div class="bg-mr-3">Suppliers</div>
+                      <div class="w-full mt-3 border-t border-gray-200 ">
+
+                      </div>
+                    </div>
+                    You can choose one or multiple suppliers
+                    <div class="relative w-full mt-2 mr-3 md:mr-0 md:block ">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                      <input type="text" id="email-adress-icon" class="block w-full p-2 pl-10 text-justify text-gray-900 border border-gray-300 rounded-lg bg-gray-50 " placeholder="Search and choose suppliers">
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-row py-4">
+                      <div class="inline-flex mr-8 ">Created by</div>
+                      <div class="w-full mt-3 border-t border-gray-200 ">
+                      </div>
+
+                    </div>
+
+                        <div class="grid grid-cols-3 gap-4 mt-2">
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Ásgeir Finnar Ásgeirsson</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Jóhann B Guðjónsson</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Same Name</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Geir jónsson</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Ólafur Pétursson</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Same Name</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Hilmar Halldórsson</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Rimvydas Kulda</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Tomas Burdenkovas</label>
+                          </div>
+                          <div><a href="#" class="mt-4 text-sm underline underline-offset-1">Show all categories</a></div>
+                        </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex flex-row py-4">
+                      <div class="bg-mr-3">Labels</div>
+                      <div class="w-full mt-3 border-t border-gray-200 ">
+                      </div>
+                    </div>
+
+                    <div class="grid grid-flow-col grid-rows-3 gap-4 mt-2">
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Label 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Label 2</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Label 3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Label 4</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Label 5</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Label 6</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox1">Label 7</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Label 8</label>
+                      </div>
+                      <div class="mb-4 form-check form-check-inline">
+                        <input class="float-left w-4 h-4 mt-1 mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer form-check-input checked:bg-blue-600 checked:border-blue-600 focus:outline-none" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="inline-block text-gray-800 form-check-label" for="inlineCheckbox2">Label 9</label>
+                      </div>
+                      <div>
+                        
+                      </div>
+                      
+                    </div>
+                    <a href="#" class="mt-4 text-sm underline underline-offset-1">Show all labels</a>
+                  </div>
+
+                  <div class="inline-flex ">
+                    <button class="absolute underline left-5 bottom-5 underline-offset-1"> Clear all</button>
+                    <div class="absolute flex space-x-4 right-5 bottom-5">
+                    <button class=" ring-2 bg-gray-50 ring-gray-400 font-medium rounded-full text-sm px-5 py-2.5 text-center ">Save filters</button>
+                    <button type="submit" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5  py-2.5 text-center ">Show 232 products</button>
+                  </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+
+    <div class="grid grid-cols-10">
+      <aside class="grid-span-1" aria-label="Sidebar">
+        <div class="px-3 overflow-y-auto ml-7 ">
+          <ul class="flex flex-col space-y-6 ">
+            <li class="mt-5"> 
+              <a href="#" class="items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg></a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg> </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                </svg> </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </a>
+            </li>
+            <li class="absolute bottom-28">
+              <a href="#" class="items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="col-start-2 col-end-11 mr-8 ">
+        <nav class="bg-white border-gray-900 px-2 sm:px-4 py-2.5 rounded ">
+          <div class="container flex flex-wrap items-center justify-between mx-auto text-center">
+
+            <div class="w-full md:block md:w-auto">
+              <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <li>
+                  <a href="./index.html" class="py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 " >Suppliers</a>
+                </li>
+
+                <li>
+                  <a href="./Products.html" class="py-2 pl-3 pr-4 text-blue-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 " aria-current="page">Products</a>
+                </li>
+                <li>
+                  <a href="#" class="py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Templates</a>
+                </li>
+                <li>
+                  <a href="#" class="py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Inventory managment</a>
+                </li>
+                <li>
+                  <a href="#" class="py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Settings</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ml-8 font-medium  text-sm p-2.5 text-center inline-flex items-center ">
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <a class="ml-8" href="#">Export to Excel</a>
+
+              <button id="AdddropdownRightStartButton" data-dropdown-toggle="AdddropdownRightStart" data-dropdown-placement="bottom" type="button" class=" ml-8 bg-blue-700 text-white  hover:bg-blue-600 hover:text-black   font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="full" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+
+                <!-- Dropdown menu -->
+                <div id="AdddropdownRightStart" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow-2xl w-44 dark:bg-gray-700">
+                    <ul class="py-1" aria-labelledby="AdddropdownRightStartButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Attraction</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Destinations</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Experiences</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Food and drinks</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Infromation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Other</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Personnel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Stays</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Transportation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Veneus</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </nav>
+
+
+
+
+
+        <main class="flex">
+
+
+
+
+
+          <div class="ml-5 shrink-0 md:w-56">
+            <h4 class="mb-4">Categories</h4>
+
+            <div class="">
+              <input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500" />Attraction <span class="md:float-right"> (32) </span>
+
+            </div>
+            <div class=""><input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500" />Destinations <span class="md:float-right">(32)</span>
+            </div>
+
+            <div>
+              <input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500" />Experiences <span class="md:float-right">(32)</span>
+            </div>
+
+            <div class="">
+              <input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500" />Food and drinks <span class="md:float-right ">(32)</span>
+            </div>
+            
+            <div class="">
+              <input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500 ..." />Infromation <span class="md:float-right">(32)</span>
+            </div>
+            <div>
+              <input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500 ..." />Other <span class="md:float-right">(32)</span>
+            </div>
+            <div>
+              <input type="checkbox" class=" mr-4 appearance-none checked:bg-blue-500 ..." />Personnel <span class="md:float-right">(32)</span>
+            </div>
+            <div class=""><input type="checkbox" class="mr-4 appearance-none checked:bg-blue-500 ..." />Stays <span class="md:float-right">(32)</span>
+            </div>
+            <div class="">
+              <input type="checkbox" class="mr-4 text-right appearance-none checked:bg-blue-500" />Transportation <span class="md:float-right">(32)</span>
+            </div>
+            <div>
+              <input type="checkbox" class="mr-4 text-justify align-middle appearance-none checked:bg-gray-500" />Venues <span class="md:float-right">(32)</span>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+          <div class="w-screen md:ml-4">
+
+            <div class="">
+              <div class="">
+                <div class="py-2 sm:px-6 lg:px-8">
+                  <div class="overflow-hidden sm:rounded-lg">
+                    <table class="min-w-full table-auto">
+                      <thead class="h-10 tracking-wider bg-white border-b dark:bg-gray-700">
+                        <tr>
+                          <th scope="col" class="pl-5 text-xs font-medium tracking-wider text-left text-gray-700 uppercase ">
+                            PRODUCT
+                          </th>
+                          <th scope="col" class="pl-5 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
+                            SUPPLIER
+                          </th>
+
+
+                          <th scope="col" class="pl-5 text-xs font-medium tracking-wider text-left text-gray-700 uppercase ">
+                            TYPE
+                          </th>
+                          <th scope="col" class="pl-5 text-xs font-medium tracking-wider text-center uppercase marker:text-gray-700 ">
+                            PRICE
+                          </th>
+                          <th scope="col" class="pl-5 text-xs font-medium tracking-wider text-center text-gray-700 uppercase">
+                            
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+
+                        <tr class="bg-white border-b hover:bg-gray-300 ">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap ">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap ">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap ">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5  items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-center text-gray-500 pl-5text-sm whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-300 dark:hover:bg-gray-700 dark:bg-gray-800 dark:border-gray-700">
+                          <td class="inline-flex pl-5 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img src="./img/india.jpeg" class="h-8 mr-10 rounded sm:h-10" alt="Logo" /><div class="flex flex-col"><div>Product title </div> <div> address</div></div> 
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            Supplier name
+                          </td>
+                          <td class="pl-5 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          </td>
+                          <td class="pl-5 text-sm text-center text-gray-500 whitespace-nowrap dark:text-gray-400">
+                            $0.00
+                          </td>
+                          <td class="pl-5 text-center text-gray-500 selection:text-sm whitespace-nowrap dark:text-gray-400">
+
+
+                            <button id="dropdownLeftStartButton" data-dropdown-toggle="dropdownLeftStart" data-dropdown-placement="left-start" class="mr-3 mb-3 px-4 py-2.5 items-center" type="button">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                              </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+                            <div id="dropdownLeftStart" class="hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow-xl w-44">
+                              <ul class="py-1" aria-labelledby="dropdownLeftStartButton">
+                                <li>
+                                  <a href="#" class="block px-4 py-2 text-sm text-gray-400 hover:text-black ">View</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="block px-4 py-2 text-sm text-gray-400 hover:text-black ">Edit</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="block px-4 py-2 text-sm text-gray-400 hover:text-black ">Duplicate</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="block px-4 py-2 text-sm text-gray-400 hover:text-black ">Fourth Action</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 border-t-2 border-gray-200 hover:text-black ">Delete</a>
+                                  </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                  </div>
+                </div>
+              </div>
+
+          
+            </div>
+
+            <div class="text-center">
+                <nav aria-label="Page navigation" class="">
+                    <ul class="inline-flex ">
+                    
+                     <li class="px-5 pt-2 text-gray-800 transition-colors "><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                          </svg></li>
+                      <li><button class="h-10 px-5 mr-56 text-gray-800 transition-colors ">Previous</button></li>
+                    
+                    
+                      <li><button class="h-10 px-5 text-gray-800 transition-colors duration-150 ">1</button></li>
+                      <li><button class="h-10 px-5 text-indigo-600 transition-colors duration-150 ">2</button></li>
+                      <li><button class="h-10 px-5 text-gray-800 transition-colors duration-150 ">3</button></li>
+                      <li><button class="h-10 px-5 text-gray-800 transition-colors duration-150 ">...</button></li>
+                      <li><button class="h-10 px-5 text-gray-800 transition-colors duration-150 ">9</button></li>
+                    
+                    
+                      <li><button class="h-10 px-5 ml-56 text-right text-gray-800 ">Next</button></li>
+                      <li class="h-10 px-5 pt-2 text-gray-800 ">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg></li>
+                    
+                    </ul>
+                
+                </nav>
+                </div>
+            
+          </div>
+
+
+
+          
+        </main>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+</body>
+
+</html>
